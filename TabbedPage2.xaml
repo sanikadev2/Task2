@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Task2.TabbedPage2"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom" 
+           BarBackgroundColor="Orange" SelectedTabColor="White">
+    <ContentPage  IconImageSource="home" BackgroundColor="Orange"/>
+
+    <ContentPage  IconImageSource="car" >
+        <StackLayout>
+            <StackLayout>
+                <Button ImageSource="small" HorizontalOptions="Start"  BackgroundColor="Transparent" Text="Scheduled Rides" TextTransform="None" TextColor="#660066" FontSize="Large" FontAttributes="Bold" >
+
+                </Button>
+                <SwipeView>
+                    <SwipeView.RightItems>
+                        <SwipeItems>
+                            <SwipeItem
+                       IconImageSource="cross"
+                       BackgroundColor="White"
+                      />
+                        </SwipeItems>
+                    </SwipeView.RightItems>
+                    <Frame BorderColor="White" HeightRequest="30" WidthRequest="10" Margin="10" CornerRadius="15" HasShadow="True" BackgroundColor="#f09c46" >
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Cancel 1/10"
+                           HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" />
+
+
+                        </StackLayout>
+                    </Frame>
+                </SwipeView>
+
+                <Frame BorderColor="White" HeightRequest="30" WidthRequest="10" Margin="10" CornerRadius="15" HasShadow="True" BackgroundColor="#f09c46" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4/10/22"
+                           HorizontalOptions="StartAndExpand" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="9AM | 6PM" TextColor="Black" FontSize="16"
+                               HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+                
+
+                <Frame BorderColor="White" HeightRequest="30" WidthRequest="10" Margin="10" CornerRadius="15" HasShadow="True" BackgroundColor="#f09c46" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5/10/22"
+                           HorizontalOptions="StartAndExpand" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="9AM | 6PM" TextColor="Black" FontSize="16"
+                               HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage  IconImageSource="dollar" BackgroundColor="Orange"/>
+
+</TabbedPage>

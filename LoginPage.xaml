@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MondayTask.LoginPage"
+             BackgroundColor="#f09c46">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Log in" Margin="10"
+                   VerticalOptions="Start" HorizontalOptions="StartAndExpand"
+                   FontSize="38"/>
+                <Grid>
+                    <Entry  BackgroundColor="White" Margin="40" />
+                </Grid>
+                <Label Text="login with your staff ID" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button Text="Log in" TextColor="Black" VerticalOptions="Center" 
+                    BorderWidth="1.5" CornerRadius="50" BackgroundColor="Yellow" Margin="50" Clicked="onLoginButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

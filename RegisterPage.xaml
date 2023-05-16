@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="http://xamarin.com/schemas/2014/forms"
+             x:Class="MondayTask.RegisterPage"
+             BackgroundColor="#f09c46">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="30">
+            <Label Text="Register Staff"
+                   TextColor="Black"
+                   FontSize="30"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                   />
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="10">
+                <Picker Grid.Column="0" Title="Country Code"
+                                TitleColor="Gray"
+                                HorizontalOptions="Start">
+                    <Picker.Items>
+                        <x:String>+124</x:String>
+                        <x:String>+91</x:String>
+                        <x:String>+12</x:String>
+                        <x:String>+56</x:String>
+                        <x:String>+32</x:String>
+                        <x:String>+10</x:String>
+                        <x:String>+02</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry Grid.Column="1" Placeholder="Phone Number" PlaceholderColor="Gray" Keyboard="Telephone" HorizontalOptions="FillAndExpand" BackgroundColor="white"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="7*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </StackLayout>
+            <Button Text="Register"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="onRegisterButton_Clicked"
+                CornerRadius="15"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

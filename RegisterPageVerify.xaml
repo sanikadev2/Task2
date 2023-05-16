@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MondayTask.RegisterPageVerify"
+             BackgroundColor="#f09c46">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="20">
+            <Label Text="Register Staff"
+                   TextColor="Black"
+                   FontSize="30"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Spacing="20">
+                <Entry x:Name="Digit1Entry" Text="" MaxLength="1" Keyboard="Numeric"/>
+                <Entry x:Name="Digit2Entry" Text="" MaxLength="1" Keyboard="Numeric"/>
+                <Entry x:Name="Digit3Entry" Text="" MaxLength="1" Keyboard="Numeric"/>
+                <Entry x:Name="Digit4Entry" Text="" MaxLength="1" Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Label Text=" We sent you a code to verify your phone number"/>
+                <Label Text="+123 123 4567"/>
+                <Label Text=" Didn't receive SMS?"/>
+            </StackLayout>
+            <Button Text="Register"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="onRegisterButton_Clicked"
+                CornerRadius="15"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="20"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
